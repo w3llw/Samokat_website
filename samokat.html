@@ -1,0 +1,157 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>самокат</title>
+    <link rel="stylesheet" href="samokat.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body class="active">
+    <header>
+        <a href="#" class="logo"><i class='bx bx-meteor'><span> самокат</span></i></a>
+        
+        <ul class="navbar">
+            <li><a href="#home">главная</a></li>
+            <li><a href="#about">о нас</a></li>
+            <li><a href="bron.html">забронировать</a></li>
+            <li><a href="#location">наши точки</a></li>
+        </ul>
+        <a href="#" class="btn">регистрация</a>
+        <a href="#question" class="btn-que"><i class='bx bx-question-mark'></i></a>
+        <i class='bx bx-calculator'></i>
+        
+        <div class="calculator">
+            <h1>Калькулятор проката самоката</h1>
+            <input type="number" id="kilometers" placeholder="Введите количество километров">
+            <button onclick="calculateCost()">Рассчитать стоимость</button>
+            <div id="result"></div>
+        </div>
+        
+    </header>
+    <section class="home" id="home">
+        <div class="home-text">
+            <h3>Твой город, твой ритм, твоя свобода.</h3>
+            <h1>Не нужно быть супергероем, чтобы лететь по городу! <br> Аренда самоката - это просто, удобно и весело.</h1>
+            <button href="#" class="btn" id="popup" onclick="showPopup()"> Прокатимся </button>
+        </div>
+
+        <div class="popup" id="myPopup">
+            <h2>Внимание !</h2>
+            <p>Зарегистрируйтесь чтобы продолжить процедуру</p>
+            <button class="btn" id="popup" onclick="closePopup()">Закрыть</button>
+        </div>
+
+        <div class="home-img">
+            <img src="img/scooter.png" alt="">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/undraw_team_work_k-80-m.svg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>о нас</h2>
+            <p>Добро пожаловать в мир, где асфальт - это ваша личная гоночная трасса, а пешеходы - это зрители, с любопытством наблюдающие за вашим триумфальным шествием. <br> Наши самокаты - это не просто средство передвижения, это портал в другую реальность. Реальность, где время течет медленнее, а улыбки шире. <br>Где вы - герой, а город - ваш личный парк развлечений</p>
+            <a href="#" class="btn">узнать больше</a>
+        </div>
+    </section>
+
+    <section class="location" id="location">
+        <div class="location-text">
+
+            <div class="box">
+                <h3><i class='bx bx-buildings'></i> наши адресса</h3>
+                <p>dushanbe, <br>
+                Rahimi Street 11, <br>
+                734064</p>
+            </div>
+
+            <div class="box">
+                <h3><i class='bx bx-envelope'></i> наша почта </h3>
+                <p>xyz@gmail.com</p>
+            </div>
+
+            <div class="box">
+                <h3><i class='bx bx-phone'></i> наши номера </h3>
+                <p>+123 456 7890 <br> +123 456 7890 </p>
+           </div>
+
+            <div class="icons">
+                <a href="#" class="bx bxl-facebook"></a>
+                <a href="#" class="bx bxl-instagram"></a>
+                <a href="#" class="bx bxl-twitter"></a>
+            </div>
+
+        </div>
+        <div class="location-img">
+            <h2>наши точки</h2>
+            <a href="#" class="image"><img src="img/map.png" alt=""></a>
+        </div>
+    </section>
+    
+    <section class="question" id="question">
+        
+        <div class="container">
+            
+            <div class="question-img">
+                <img src="img/question.svg" alt="">
+            </div>
+            
+            <div class="accordion-container">
+    
+                <div class="accordion active">
+                    <div class="accordion-heading">
+                        <h3>Нужны ли мне водительские права для аренды самоката?</h3>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <p class="accordion-content">
+                        - Нет, водительские права не требуются.
+                    </p>
+                </div>
+    
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3>Где можно парковать самокаты?</h3>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <p class="accordion-content">
+                        - Самокаты следует парковать в отведенных местах для парковки или в местах, где они не будут мешать пешеходам или транспортным средствам.
+                    </p>
+                </div>
+    
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3>Что делать, если я попал в аварию на самокате?</h3>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <p class="accordion-content">
+                        - В случае аварии следует оставаться на месте, вызвать полицию и скорую помощь при необходимости, а также связаться с компанией по аренде самокатов.
+                    </p>
+                </div>
+    
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3>Что делать, если у меня закончился заряд батареи на самокате?</h3>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <p class="accordion-content">
+                        - Если у самоката заканчивается заряд батареи, припаркуйте его в безопасном месте и свяжитесь с компанией по аренде самокатов. Они могут отправить вам другой самокат или помочь зарядить текущий.
+                    </p>
+                </div>
+    
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3>Как арендовать самокат?</h3>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <p class="accordion-content">
+                        - Загрузите приложение компании на свой смартфон. Создайте учетную запись и привяжите способ оплаты. Найдите самокат, отсканируйте QR-код и следуйте инструкциям в приложении, чтобы разблокировать его.
+                </div>
+            </div>
+        </div>
+    </section>
+        <script src="samokat.js"></script>
+</body>
+</html>
